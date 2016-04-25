@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  code: MyString
+  discount: 9.99
+  applicable_for: MyString
+  expired_at: MyString
+
+two:
+  code: MyString
+  discount: 9.99
+  applicable_for: MyString
+  expired_at: MyString

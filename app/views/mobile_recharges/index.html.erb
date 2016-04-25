@@ -1,0 +1,19 @@
+
+
+		<%if current_customer%>
+			
+           
+       <!--      <div class ='recharge'>
+                <%= form_for    do |f| %>
+                 <%=f.label  , 'Mobie NUmber ' : %>
+            </div>
+ -->
+
+						<%@mobile_recharges.each do |mobile_recharge|%>
+						<%= mobile_recharge.company%> <br> <br>
+
+						<%end%>
+		<%else%>
+		         <%= link_to 'Login' ,new_customer_session_path %>
+		<%end%>
+
