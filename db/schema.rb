@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160425140601) do
+ActiveRecord::Schema.define(version: 20160611030858) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -49,10 +49,10 @@ ActiveRecord::Schema.define(version: 20160425140601) do
   create_table "coupan_codes", force: :cascade do |t|
     t.string   "code"
     t.decimal  "discount"
-    t.string   "applicable_for"
+    t.decimal  "applicable_for_amount"
     t.string   "expired_at"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
     t.integer  "recharge_id"
   end
 
@@ -85,6 +85,11 @@ ActiveRecord::Schema.define(version: 20160425140601) do
     t.decimal  "price"
     t.string   "company"
     t.string   "recharge_type"
+  end
+
+  create_table "offers", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "recharges", force: :cascade do |t|

@@ -3,4 +3,23 @@ class Customer < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+
+
+
+
+def recharge_phone
+	
+end
+
+def trasaction_history
+	
+end
+
+
+
+
+
+
+
+
 end

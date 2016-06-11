@@ -5,7 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-#AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
 
 MobileRecharge.create!(price:10 ,company:'vodafone' ,recharge_type:'prepaid')
 MobileRecharge.create!(price:20 ,company:'vodafone' ,recharge_type:'prepaid')
